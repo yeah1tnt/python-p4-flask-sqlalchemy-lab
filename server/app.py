@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 from models import db, Zookeeper, Enclosure, Animal
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/yealt/Development/code/phase-4/python-p4-flask-sqlalchemy-lab/server/instance/app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 migrate = Migrate(app, db)
